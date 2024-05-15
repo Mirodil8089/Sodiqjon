@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    margin-top: 20px;
+    width: 60px; 
+   height: 60px;
+   border-radius: 26px 38px;
+}
+.cards{
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: rgb(4, 81, 81);
+    border: 2px solid yellow;
+    text-align: center;
+    height: 300px;
+}
+.echvan-2{
+    color: white;
+    margin-top: 20px;
+}
+.paragrf{
+    margin-top: 10px;
+    color: white;
+    line-height: 30px;
+}
+@media screen and (max-width:800px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        margin-top: 20px;
+        display: flex;
+        width: 800px;
+    }
+    .box{
+        margin-top: 15px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        margin-left: 30px;
+        margin-top: 60px;
+        border-radius: 46px 67px;
+    }
+    .paragrf{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .cards{
+        grid-template-columns: repeat(1, 3fr);
+    }   
+    .card{
+        width: 700px;   
+        height: 450px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        margin-top: 35px;
+        border-radius: 60px 88px;
+        margin-left: 170px;
+    }
+    .box{
+        margin-top: 190px;
+        margin-left: -250px;
+    }
+    .paragrf{
+        line-height: 35px;
+    }
+}
